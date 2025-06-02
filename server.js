@@ -1,14 +1,24 @@
 const http = require('http');
 
+const todos =  [
+    { id: 1, text: "Todo One"   },
+    { id: 2, text: "Todo Two"   },
+    { id: 3, text: "Todo Three" }
+];
 
 const server = http.createServer((req, res) => {
-    console.log(req.method);
-    const {headers, url, method } = req;
-    console.log(`Request Method: ${method}`);
-    console.log(`Request URL: ${url}`);
-    console.log('Headers:', headers);
+    // console.log(req.method);
+    // const {headers, url, method } = req;
+    // console.log(`Request Method: ${method}`);
+    // console.log(`Request URL: ${url}`);
+    // console.log('Headers:', headers);
     
-    res.end();
+    res.setHeader("Content-Type","application/json");
+    res.setHeader("X-Powered-By","Node.js");
+    res.end(JSON.stringify({
+        success: true,
+        data: todos
+    }));
 }); 
 
 // const server = http.createServer((req, res) => {
