@@ -1,0 +1,26 @@
+{
+  "name": "scaling-fiesta-api",
+  "version": "1.0.0",
+  "description": "HTTP",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabianCdx/scaling-fiesta-api.git"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "Fabian Sander-Pirva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FabianCdx/scaling-fiesta-api/issues"
+  },
+  "homepage": "https://github.com/FabianCdx/scaling-fiesta-api#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
